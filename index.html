@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Studio Beauty — salão de beleza. Agende seu horário, conheça nossos serviços e promoções."
+    />
+    <title>Studio Beauty | Salão de Beleza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/js/script.js" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#topo" aria-label="Studio Beauty — início">
+          <img class="brand__logo" src="/img/Logo.png" alt="Logo Studio Beauty" />
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" aria-label="Navegação principal" data-nav>
+          <a class="nav__link" href="#servicos">Serviços</a>
+          <a class="nav__link" href="#sobre">Sobre</a>
+          <a class="nav__link" href="#galeria">Galeria</a>
+          <a class="nav__link" href="#depoimentos">Depoimentos</a>
+          <a class="nav__link" href="#contato">Contato</a>
+          <a class="btn btn--primary nav__cta" href="#contato">Agendar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="topo">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="pill">Studio Beauty</p>
+            <h1 class="hero__title">
+              Beleza com
+              <span class="hero__title-accent">cuidado</span>
+              e <span class="hero__title-accent">estilo</span>.
+            </h1>
+            <p class="hero__subtitle">
+              Atendimento aconchegante, profissionais qualificados e resultados que valorizam você.
+              Agende seu horário com facilidade.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contato">Agendar agora</a>
+              <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+            </div>
+
+            <div class="hero__highlights" role="list">
+              <div class="stat" role="listitem">
+                <span class="stat__num">+500</span>
+                <span class="stat__label">clientes felizes</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat__num">5.0</span>
+                <span class="stat__label">avaliação média</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat__num">Seg–Sáb</span>
+                <span class="stat__label">horários flexíveis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__media" aria-hidden="true">
+            <div class="card-glow">
+              <div class="card-glow__inner">
+                <div class="mock">
+                  <div class="mock__top">
+                    <span class="dot dot--a"></span>
+                    <span class="dot dot--b"></span>
+                    <span class="dot dot--c"></span>
+                  </div>
+                  <div class="mock__body">
+                    <div class="mock__line w-80"></div>
+                    <div class="mock__line w-60"></div>
+                    <div class="mock__line w-90"></div>
+                    <div class="mock__chips">
+                      <span class="chip">Cabelo</span>
+                      <span class="chip">Unhas</span>
+                      <span class="chip">Maquiagem</span>
+                      <span class="chip">Sobrancelhas</span>
+                    </div>
+                    <div class="mock__cta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Serviços</h2>
+            <p class="section__subtitle">
+              Uma seleção dos serviços mais procurados. Você pode ajustar nomes e preços quando
+              quiser.
+            </p>
+          </header>
+
+          <div class="grid cards">
+            <article class="card">
+              <h3 class="card__title">Corte & Escova</h3>
+              <p class="card__text">Modelagem, finalização e brilho com produtos profissionais.</p>
+              <p class="card__meta">A partir de <strong>R$ 00,00</strong></p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Coloração</h3>
+              <p class="card__text">Tonalização, retoque e transformação com diagnóstico.</p>
+              <p class="card__meta">A partir de <strong>R$ 00,00</strong></p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Manicure & Pedicure</h3>
+              <p class="card__text">Cutilagem cuidadosa, esmaltação e opções em gel.</p>
+              <p class="card__meta">A partir de <strong>R$ 00,00</strong></p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Sobrancelhas</h3>
+              <p class="card__text">Design, henna e alinhamento para realçar o olhar.</p>
+              <p class="card__meta">A partir de <strong>R$ 00,00</strong></p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Maquiagem</h3>
+              <p class="card__text">Social, festa e noiva com acabamento impecável.</p>
+              <p class="card__meta">A partir de <strong>R$ 00,00</strong></p>
+            </article>
+            <article class="card card--highlight">
+              <h3 class="card__title">Pacotes</h3>
+              <p class="card__text">
+                Economize com combos personalizados para rotina ou ocasiões especiais.
+              </p>
+              <a class="btn btn--primary btn--small" href="#contato">Quero um pacote</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="sobre">
+        <div class="container split">
+          <div class="split__media" aria-hidden="true">
+            <div class="frame">
+              <div class="frame__inner">
+                <div class="pattern"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="split__content">
+            <h2 class="section__title">Sobre o Studio Beauty</h2>
+            <p class="section__subtitle">
+              Um espaço pensado para você se sentir bem do começo ao fim — atendimento humano,
+              higiene impecável e resultados consistentes.
+            </p>
+
+            <ul class="checks">
+              <li>Profissionais especializados</li>
+              <li>Ambiente confortável e acolhedor</li>
+              <li>Produtos selecionados</li>
+              <li>Atendimento por horário</li>
+            </ul>
+
+            <div class="cta-row">
+              <a class="btn btn--primary" href="#contato">Agendar avaliação</a>
+              <a class="link" href="#depoimentos">Ver depoimentos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="galeria">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Galeria</h2>
+            <p class="section__subtitle">
+              Espaço reservado para fotos do salão e resultados. Troque pelos seus conteúdos.
+            </p>
+          </header>
+
+          <div class="grid gallery">
+            <div class="ph" aria-label="Foto 1 (placeholder)"></div>
+            <div class="ph" aria-label="Foto 2 (placeholder)"></div>
+            <div class="ph" aria-label="Foto 3 (placeholder)"></div>
+            <div class="ph" aria-label="Foto 4 (placeholder)"></div>
+            <div class="ph" aria-label="Foto 5 (placeholder)"></div>
+            <div class="ph" aria-label="Foto 6 (placeholder)"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="depoimentos">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Depoimentos</h2>
+            <p class="section__subtitle">O que nossas clientes dizem.</p>
+          </header>
+
+          <div class="grid testimonials">
+            <figure class="quote">
+              <blockquote>
+                Atendimento maravilhoso e resultado perfeito! Me senti super bem cuidada.
+              </blockquote>
+              <figcaption>— Cliente</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>Ambiente lindo, pontualidade e muita atenção aos detalhes.</blockquote>
+              <figcaption>— Cliente</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>Minhas unhas ficaram impecáveis. Já virei cliente fiel.</blockquote>
+              <figcaption>— Cliente</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contato">
+        <div class="container contact">
+          <div class="contact__card">
+            <h2 class="section__title">Contato e Agendamento</h2>
+            <p class="section__subtitle">
+              Preencha os dados e clique em “Enviar no WhatsApp” para montar a mensagem automática.
+            </p>
+
+            <form class="form" data-whats-form>
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label">Nome</span>
+                  <input class="field__input" name="nome" autocomplete="name" required />
+                </label>
+                <label class="field">
+                  <span class="field__label">Telefone</span>
+                  <input
+                    class="field__input"
+                    name="telefone"
+                    inputmode="tel"
+                    autocomplete="tel"
+                    placeholder="(DD) 00000-0000"
+                  />
+                </label>
+              </div>
+
+              <label class="field">
+                <span class="field__label">Serviço</span>
+                <select class="field__input" name="servico" required>
+                  <option value="" selected disabled>Selecione…</option>
+                  <option>Corte & Escova</option>
+                  <option>Coloração</option>
+                  <option>Manicure & Pedicure</option>
+                  <option>Sobrancelhas</option>
+                  <option>Maquiagem</option>
+                  <option>Pacote</option>
+                </select>
+              </label>
+
+              <div class="form__row">
+                <label class="field">
+                  <span class="field__label">Data</span>
+                  <input class="field__input" name="data" type="date" />
+                </label>
+                <label class="field">
+                  <span class="field__label">Horário</span>
+                  <input class="field__input" name="hora" type="time" />
+                </label>
+              </div>
+
+              <label class="field">
+                <span class="field__label">Observações</span>
+                <textarea class="field__input" name="obs" rows="4" placeholder="Ex.: preferência de horário, química no cabelo…"></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit">Enviar no WhatsApp</button>
+                <button class="btn btn--ghost" type="reset">Limpar</button>
+              </div>
+
+              <p class="form__hint">
+                Dica: edite o número do WhatsApp no arquivo <code>script.js</code>.
+              </p>
+            </form>
+          </div>
+
+          <aside class="contact__info">
+            <div class="info">
+              <h3 class="info__title">Endereço</h3>
+              <p class="info__text">Rua Exemplo, 123 — Sua Cidade/UF</p>
+            </div>
+            <div class="info">
+              <h3 class="info__title">Horários</h3>
+              <p class="info__text">Seg a Sáb — 09:00 às 19:00</p>
+            </div>
+            <div class="info">
+              <h3 class="info__title">Redes sociais</h3>
+              <p class="info__text">
+                <a class="link" href="#" rel="noreferrer">Instagram</a>
+                <span class="sep">•</span>
+                <a class="link" href="#" rel="noreferrer">Facebook</a>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img class="footer__logo" src="/img/Logo.png" alt="Logo Studio Beauty" />
+          <p class="footer__text">Studio Beauty — beleza com carinho.</p>
+        </div>
+        <p class="footer__copy">© <span data-year></span> Studio Beauty. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <a class="fab" href="#contato" aria-label="Agendar">
+      Agendar
+    </a>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
