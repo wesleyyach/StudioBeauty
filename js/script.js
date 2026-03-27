@@ -1,4 +1,4 @@
-const WHATSAPP_PHONE_E164 = "55XXXXXXXXXXX"; // Ex.: 5511999999999 (DD + número, sem espaços)
+const WHATSAPP_PHONE_E164 = "5581999630813"; // Ex.: 5511999999999 (DD + número, sem espaços)
 
 function setYear() {
   const el = document.querySelector("[data-year]");
