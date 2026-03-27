@@ -36,12 +36,15 @@ function setDateMinToToday() {
 function setupMobileNav() {
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]");
+  const backdrop = document.querySelector("[data-nav-backdrop]");
   if (!toggle || !nav) return;
 
   const setOpen = (open) => {
     nav.classList.toggle("is-open", open);
+    if (backdrop) backdrop.classList.toggle("is-open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
     toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    document.documentElement.style.overflow = open ? "hidden" : "";
   };
 
   toggle.addEventListener("click", () => setOpen(!nav.classList.contains("is-open")));
@@ -51,6 +54,8 @@ function setupMobileNav() {
     if (!a) return;
     setOpen(false);
   });
+
+  if (backdrop) backdrop.addEventListener("click", () => setOpen(false));
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") setOpen(false);
