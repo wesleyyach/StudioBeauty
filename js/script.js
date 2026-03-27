@@ -33,6 +33,29 @@ function setDateMinToToday() {
   input.min = formatYMD(startOfTodayLocal());
 }
 
+function setupTimeSelect() {
+  const select = document.querySelector("[data-time-select]");
+  if (!select) return;
+
+  const startMinutes = 9 * 60; // 09:00
+  const endMinutes = 19 * 60; // 19:00
+  const step = 30; // 30 em 30 min
+
+  const toHHMM = (mins) => {
+    const h = Math.floor(mins / 60);
+    const m = mins % 60;
+    return `${pad2(h)}:${pad2(m)}`;
+  };
+
+  for (let t = startMinutes; t <= endMinutes; t += step) {
+    const v = toHHMM(t);
+    const opt = document.createElement("option");
+    opt.value = v;
+    opt.textContent = v;
+    select.appendChild(opt);
+  }
+}
+
 function setupMobileNav() {
   const toggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]");
@@ -133,6 +156,7 @@ function setupWhatsAppForm() {
 
 setYear();
 setDateMinToToday();
+setupTimeSelect();
 setupMobileNav();
 setupWhatsAppForm();
 

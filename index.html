@@ -92,21 +92,23 @@
               <div class="card-glow__inner">
                 <div class="mock">
                   <div class="mock__top">
-                    <span class="dot dot--a"></span>
-                    <span class="dot dot--b"></span>
-                    <span class="dot dot--c"></span>
+                    <span class="mock__label">Studio Beauty</span>
                   </div>
                   <div class="mock__body">
-                    <div class="mock__line w-80"></div>
-                    <div class="mock__line w-60"></div>
-                    <div class="mock__line w-90"></div>
+                    <div class="mock__photo">
+                      <img
+                        src="/img/Logo.png"
+                        alt="Ambiente do Studio Beauty"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
                     <div class="mock__chips">
                       <span class="chip">Cabelo</span>
-                      <span class="chip">Unhas</span>
-                      <span class="chip">Maquiagem</span>
-                      <span class="chip">Sobrancelhas</span>
+                      <span class="chip">Escova</span>
+                      <span class="chip">Coloração</span>
+                      <span class="chip">Make</span>
                     </div>
-                    <div class="mock__cta"></div>
                   </div>
                 </div>
               </div>
@@ -164,10 +166,11 @@
 
       <section class="section section--alt" id="sobre">
         <div class="container split">
-          <div class="split__media" aria-hidden="true">
+          <div class="split__media">
             <div class="frame">
               <div class="frame__inner">
-                <div class="pattern"></div>
+                <div class="pattern" aria-hidden="true"></div>
+                <img class="about__logo" src="/img/StudioBeauty2.png" alt="Logo Studio Beauty" loading="lazy" decoding="async" />
               </div>
             </div>
           </div>
@@ -298,13 +301,9 @@
                 </label>
                 <label class="field">
                   <span class="field__label">Horário</span>
-                  <input
-                    class="field__input"
-                    name="hora"
-                    type="time"
-                    min="09:00"
-                    max="19:00"
-                  />
+                  <select class="field__input" name="hora" required data-time-select>
+                    <option value="" selected disabled>Selecione…</option>
+                  </select>
                 </label>
               </div>
 
